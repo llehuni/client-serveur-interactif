@@ -5,6 +5,7 @@
     z-index: 20;
     animation: fade 0.2s ease-out;
   }
+
   .drawer {
     position: fixed;
     inset: 0 0 0 auto;
@@ -19,11 +20,13 @@
     animation: slide 0.25s ease-out;
     line-height: 1.65;
   }
+
   .drawer-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .badge,
   .caption {
     color: #3569d4;
@@ -31,6 +34,7 @@
     font-weight: 800;
     letter-spacing: 0.12em;
   }
+
   .close {
     border: 0;
     background: transparent;
@@ -39,21 +43,25 @@
     cursor: pointer;
     padding: 5px;
   }
+
   h2 {
     font-size: 1.8rem;
     letter-spacing: -0.03em;
     margin: 20px 0 12px;
   }
+
   .brief {
     border-left: 4px solid #3569d4;
     background: #edf4ff;
     padding: 12px 14px;
     border-radius: 0 9px 9px 0;
   }
+
   .content {
     margin: 20px 0;
     color: var(--muted, #52617a);
   }
+
   .term {
     background: #fff3a3;
     border: 0;
@@ -64,13 +72,16 @@
     font: inherit;
     color: inherit;
   }
+
   .term:hover,
   .inline-link:hover {
     background: #ffe56b;
   }
+
   .caption {
     margin: 18px 0 5px;
   }
+
   .code {
     background: #182238;
     color: #d7fbe8;
@@ -79,24 +90,29 @@
     overflow-x: auto;
     font-size: 0.82rem;
   }
+
   .key-value {
     padding: 12px 14px;
     background: #f7f9fd;
     border: 1px solid #dfe7f3;
     border-radius: 10px;
   }
+
   .pair {
     display: flex;
     gap: 10px;
     align-items: center;
     font-size: 1rem;
   }
+
   .pair code:first-child {
     color: #8d36bb;
   }
+
   .pair code:last-child {
     color: #18764b;
   }
+
   .inline-link {
     border: 0;
     padding: 3px;
@@ -106,6 +122,7 @@
     cursor: pointer;
     font: inherit;
   }
+
   .understood {
     width: 100%;
     margin-top: 20px;
@@ -118,23 +135,29 @@
     font: inherit;
     font-weight: 700;
   }
+
   @keyframes fade {
     from {
       opacity: 0;
     }
+
     to {
       opacity: 1;
     }
   }
+
   @keyframes slide {
     from {
       transform: translateX(100%);
     }
+
     to {
       transform: translateX(0);
     }
   }
+
   @media (prefers-reduced-motion: reduce) {
+
     .backdrop,
     .drawer {
       animation: none;
