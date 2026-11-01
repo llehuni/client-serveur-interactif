@@ -16,7 +16,6 @@
     overflow-y: auto;
     background: var(--surface, #fff);
     color: var(--text, #182238);
-    box-shadow: -10px 0 30px #18223825;
     animation: slide 0.25s ease-out;
     line-height: 1.65;
   }
