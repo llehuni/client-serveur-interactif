@@ -1,11 +1,10 @@
 <script>
-  import "./page.css";
-  import { browsers, pages, steps, terms } from "$lib/data.js";
-  import InfoDrawer from "$lib/components/InfoDrawer.svelte";
-  import chromeLogo from "../assets/Google_Chrome_icon_(February_2022).svg.webp";
-  import firefoxLogo from "../assets/Firefox_logo,_2019.png";
-  import safariLogo from "../assets/Apple Safari.png";
-  import edgeLogo from "../assets/Microsoft_Edge_logo_(2019).svg";
+  import { browsers, pages, steps, terms } from "./lib/data.js";
+  import InfoDrawer from "./lib/components/InfoDrawer.svelte";
+  import chromeLogo from "./assets/Google_Chrome_icon_(February_2022).svg.webp";
+  import firefoxLogo from "./assets/Firefox_logo,_2019.png";
+  import safariLogo from "./assets/Apple Safari.png";
+  import edgeLogo from "./assets/Microsoft_Edge_logo_(2019).svg";
 
   let step = $state(0),
     br = $state(null),
@@ -263,4 +262,3 @@
   onClose={() => (drawer = null)}
   onTerm={openDrawer}
 />
-
